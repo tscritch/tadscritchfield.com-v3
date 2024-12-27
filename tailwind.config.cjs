@@ -6,7 +6,7 @@ module.exports = {
     theme: {
         fontFamily: {
             sans: ['Inter Variable', ...defaultTheme.fontFamily.sans],
-            serif: ['Newsreader Variable', ...defaultTheme.fontFamily.serif]
+            serif: ['Source Code Pro Variable', ...defaultTheme.fontFamily.serif]
         },
         extend: {
             textColor: {

@@ -23,7 +23,7 @@ importers:
       '@fontsource-variable/inter':
         specifier: ^5.1.0
         version: 5.1.0
-      '@fontsource-variable/newsreader':
+      '@fontsource-variable/source-code-pro':
         specifier: ^5.1.0
         version: 5.1.0
       astro:
@@ -398,8 +398,8 @@ packages:
   '@fontsource-variable/inter@5.1.0':
     resolution: {integrity: sha512-Wj2dUGP0vUpxRGQTXQTCNJO+aLcFcQm+gUPXfj/aS877bQkEPBPv9JvZJpwdm2vzelt8NTZ+ausKlBCJjh2XIg==}
 
-  '@fontsource-variable/newsreader@5.1.0':
-    resolution: {integrity: sha512-2ISuLzafbdqtakul+f0EwS+u0phcnxFeEFVBCRPEVcbOOLMR2oq0MFUy1Gmi6n4F5LFso97ocyTOyGUQrUUVXg==}
+  '@fontsource-variable/source-code-pro@5.1.0':
+    resolution: {integrity: sha512-hbsT9vNrdAIqmBP7qLzzNvFthpb4zkYG5fXT+7KJdYYl8AJwEACzH1marO/bzqUlKnnT8e53cgFuFCEzzJ19qA==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2485,7 +2485,7 @@ snapshots:
 
   '@fontsource-variable/inter@5.1.0': {}
 
-  '@fontsource-variable/newsreader@5.1.0': {}
+  '@fontsource-variable/source-code-pro@5.1.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
