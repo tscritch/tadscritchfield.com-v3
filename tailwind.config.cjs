@@ -19,6 +19,9 @@ module.exports = {
             borderColor: {
                 main: 'rgb(var(--color-border-main) / <alpha-value>)'
             },
+            fontSize: {
+                xs: ['0.75rem', { lineHeight: '1rem' }]
+            },
             typography: (theme) => ({
                 dante: {
                     css: {

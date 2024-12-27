@@ -38,74 +38,62 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
-    image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
-    },
+    title: 'Tad Scritchfield',
+    subtitle: 'designer - engineer - creator',
+    description: 'Personal website of Tad Scritchfield, a designer, engineer, and creator.',
+    // image: {
+    //     src: '/dante-preview.jpg',
+    //     alt: 'Dante - Astro.js and Tailwind CSS theme'
+    // },
     headerNavLinks: [
         {
-            text: 'Home',
+            text: 'home',
             href: '/'
         },
         {
-            text: 'Projects',
-            href: '/projects'
+            text: 'work',
+            href: '/work'
         },
         {
-            text: 'Blog',
+            text: 'blog',
             href: '/blog'
-        },
-        {
-            text: 'Tags',
-            href: '/tags'
         }
     ],
     footerNavLinks: [
         {
-            text: 'About',
+            text: 'about',
             href: '/about'
         },
         {
-            text: 'Contact',
+            text: 'contact',
             href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
         }
     ],
     socialLinks: [
         {
             text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            href: 'https://dribbble.com/tscritch'
         },
         {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
+            text: 'Youtube',
+            href: 'https://youtube.com/@tadly'
         },
         {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            text: 'X',
+            href: 'https://x.com/tadscritch'
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
-        image: {
-            src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
-        },
+        // title: 'Hi There & Welcome to My Corner of the Web!',
+        text: "I'm Tad Scritchfield, an engineer at SmartRent developing software for customer support and internal tools. I'm also a designer and creator. I love to build things and share what I learn along the way.",
+        // image: {
+        //     src: '/hero.jpeg',
+        //     alt: 'A person sitting at a desk in front of a computer'
+        // },
         actions: [
             {
-                text: 'Get in Touch',
-                href: '/contact'
+                text: 'see work →',
+                href: '/work'
             }
         ]
     },
