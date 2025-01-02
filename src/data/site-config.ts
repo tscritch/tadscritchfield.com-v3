@@ -60,10 +60,10 @@ const siteConfig: SiteConfig = {
         }
     ],
     footerNavLinks: [
-        {
-            text: 'about',
-            href: '/about'
-        },
+        // {
+        //     text: 'about',
+        //     href: '/about'
+        // },
         {
             text: 'contact',
             href: '/contact'
@@ -85,7 +85,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         // title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm Tad Scritchfield, an engineer at SmartRent developing software for customer support and internal tools. I'm also a designer and creator. I love to build things and share what I learn along the way.",
+        text: "I'm an engineer at SmartRent developing software for customer support and internal tools. I'm also a designer and creator. I love to build things and share what I learn along the way.",
         // image: {
         //     src: '/hero.jpeg',
         //     alt: 'A person sitting at a desk in front of a computer'
