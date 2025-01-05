@@ -39,7 +39,7 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     title: 'Tad Scritchfield',
-    subtitle: 'designer - engineer - creator',
+    // subtitle: 'designer - engineer - creator',
     description: 'Personal website of Tad Scritchfield, a designer, engineer, and creator.',
     // image: {
     //     src: '/dante-preview.jpg',
@@ -57,6 +57,10 @@ const siteConfig: SiteConfig = {
         {
             text: 'blog',
             href: '/blog'
+        },
+        {
+            text: 'inspo',
+            href: '/inspo'
         }
     ],
     footerNavLinks: [

@@ -1,16 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
-import ArrowRight from '../../icons/ArrowRight.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Subscribe from '../../components/Subscribe.astro';
-import { sortItemsByDateDesc, getAllTags, getPostsByTag } from '../../utils/data-utils';
+import Masonry from '../../components/Masonry.astro';
+import { getInspoData } from '../../data/inspo-data';
+import InspoItem from '../../components/InspoItem.astro';
 
-const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
-const tags = getAllTags(posts).sort((tagA, tagB) => {
-    const postCountTagA = getPostsByTag(posts, tagA.id).length;
-    const postCountTagB = getPostsByTag(posts, tagB.id).length;
-    return postCountTagB - postCountTagA;
-});
+const inspoData = await getInspoData();
+
+const inspoItems = inspoData.map((item) => <InspoItem data={item} />);
 ---
 
-<BaseLayout title="Inspo" description="A collection of media that has accumulatively changed my life." showHeader={false} />
+<BaseLayout title="Inspo" description="A collection of media that has accumulatively changed my life." showHeader={false}>
+    <section class="px-8 md:px-20 py-2">
+        <p class="py-8">A collection of media that has accumulatively changed my life.</p>
+        <Masonry>
+            {inspoItems}
+        </Masonry>
+    </section>
+</BaseLayout>

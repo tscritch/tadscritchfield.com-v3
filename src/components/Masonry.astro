@@ -1,0 +1,16 @@
+---
+
+---
+
+<div class="masonry">
+    <slot />
+</div>
+
+<script>
+    import MiniMasonry from 'minimasonry';
+
+    new MiniMasonry({
+        container: '.masonry',
+        baseWidth: 100
+    });
+</script>
