@@ -14,8 +14,8 @@ export const workData: WorkData[] = [
         title: 'Days Without',
         description: 'Built with Joe Previte. A habit tracker for iOS.',
         date: 'October 2024',
-        image: '/images/song-writer-companion.jpg',
-        link: 'https://songwritercompanion.com',
+        image: '/images/days-without.png',
+        link: 'https://bit.ly/days-without-app',
         linkText: 'visit'
     },
     {

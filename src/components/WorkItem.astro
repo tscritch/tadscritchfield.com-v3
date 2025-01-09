@@ -7,8 +7,8 @@ type Props = {
 const { data } = Astro.props;
 ---
 
-<a href={data.link} target="_blank">
-    <div class="text-black bg-white border rounded-lg p-1 shadow-sm min-w-[16rem] mb-2 opacity-0 animate-fade-in">
+<a href={data.link} target="_blank" class="block absolute">
+    <div class="text-black bg-white border rounded-lg p-1 shadow-sm min-w-[14rem] mb-2 opacity-0 animate-fade-in">
         <div class="relative">
             <div class="rounded overflow-hidden border mb-1 flex justify-center">
                 <div
@@ -21,7 +21,7 @@ const { data } = Astro.props;
                 {data.video ? <video src={data.video} playsinline autoplay muted loop class="z-0" /> : <img src={data.image} alt={data.title} class="z-0" />}
             </div>
             <div
-                class={`rounded w-[calc(100%-2px)] flex justify-between items-center p-4 py-5 mb-[1px] ml-[1px] absolute bottom-0 text-xs bg-gradient-to-t ${
+                class={`rounded w-[calc(100%-2px)] flex justify-between items-center p-4 py-3 mb-[1px] ml-[1px] absolute bottom-0 text-[0.625rem] bg-gradient-to-t ${
                     data.dark ? 'from-slate-800' : 'from-white'
                 } to-transparent`}
             >
@@ -34,7 +34,7 @@ const { data } = Astro.props;
             </div>
         </div>
         <div
-            class="flex justify-center items-center bg-slate-100 text-slate-800 text-base rounded px-2 py-1 text-center transition-colors duration-500 hover:bg-slate-200"
+            class="flex justify-center items-center bg-slate-100 text-slate-800 text-sm font-serif rounded px-2 py-1 text-center transition-colors duration-500 hover:bg-slate-200"
         >
             {data.linkText}
             <span class="text-md pl-1">↗</span>
