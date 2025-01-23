@@ -83,7 +83,7 @@ module.exports = {
                 }
             }),
             animation: {
-                'fade-in': 'fade-in 2s ease-in-out forwards'
+                'fade-in': 'fade-in 1.5s ease-in-out forwards'
             },
             keyframes: {
                 'fade-in': {

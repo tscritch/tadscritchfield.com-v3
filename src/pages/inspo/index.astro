@@ -5,15 +5,13 @@ import { getInspoData } from '../../data/inspo-data';
 import InspoItem from '../../components/InspoItem.astro';
 
 const inspoData = await getInspoData();
-
-const inspoItems = inspoData.map((item) => <InspoItem data={item} />);
 ---
 
 <BaseLayout title="Inspo" description="A collection of media that has accumulatively changed my life." showHeader={false}>
-    <section class="px-8 md:px-20 py-2">
+    <section class="py-2">
         <p class="py-8">A collection of media that has accumulatively changed my life.</p>
         <Masonry>
-            {inspoItems}
+            {inspoData.map((item) => <InspoItem data={item} />)}
         </Masonry>
     </section>
 </BaseLayout>

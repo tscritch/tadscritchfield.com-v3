@@ -57,10 +57,6 @@ const siteConfig: SiteConfig = {
         {
             text: 'blog',
             href: '/blog'
-        },
-        {
-            text: 'inspo',
-            href: '/inspo'
         }
     ],
     footerNavLinks: [

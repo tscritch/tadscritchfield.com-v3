@@ -8,7 +8,7 @@ type Props = {
 const { data } = Astro.props;
 ---
 
-<div class="text-black bg-white border rounded-lg p-1 shadow-sm min-w-[16rem] mb-2 opacity-0 animate-fade-in">
+<div class="text-black bg-white border rounded-lg p-1 shadow-sm min-w-[14rem] mb-2 opacity-0 animate-fade-in absolute">
     <div class="relative">
         <div class="rounded overflow-hidden border flex justify-center">
             <div
@@ -29,7 +29,7 @@ const { data } = Astro.props;
 
                                         return (
                                             <a href={l} target="_blank" rel="noreferrer" class="text-gray-800">
-                                                <Icon name={lk as IconName} size={24} />
+                                                {/* <Icon name={lk as IconName} size={24} /> */}
                                             </a>
                                         );
                                     })}

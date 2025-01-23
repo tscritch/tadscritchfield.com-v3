@@ -7,6 +7,7 @@ export interface WorkData {
     link: string;
     linkText?: string;
     dark?: boolean;
+    center?: boolean;
 }
 
 export const workData: WorkData[] = [
@@ -16,7 +17,8 @@ export const workData: WorkData[] = [
         date: 'October 2024',
         image: '/images/days-without.png',
         link: 'https://bit.ly/days-without-app',
-        linkText: 'visit'
+        linkText: 'visit',
+        dark: true
     },
     {
         title: 'Songleaf',
@@ -46,10 +48,19 @@ export const workData: WorkData[] = [
         title: 'Chart Cake',
         description: 'Good looking charts for your website or emails.',
         date: 'February 2022',
-        image: '/images/chartcake-v2.png',
+        image: '/images/chartcake.gif',
         // video: '/videos/chartcake.mp4',
         link: 'https://chartcake.com',
         linkText: 'visit'
+    },
+    {
+        title: 'Adiago',
+        description: 'Styled React Component Library based on Radix UI',
+        date: 'November 2022',
+        image: '/images/adiago-banner.jpg',
+        link: 'https://song-leaf-ui-docs.vercel.app/docs/Button',
+        linkText: 'visit',
+        center: true
     },
     {
         title: 'Money Tracker',
@@ -97,7 +108,8 @@ export const workData: WorkData[] = [
         // video: "/videos/dead-simple-react-calendar.mp4",
         link: 'https://github.com/tscritch/TestPrep',
         linkText: 'github',
-        dark: true
+        dark: true,
+        center: true
     },
     {
         title: 'The Beauty of the Greater Things',
@@ -107,6 +119,7 @@ export const workData: WorkData[] = [
         // video: "/videos/dead-simple-react-calendar.mp4",
         link: 'https://www.amazon.com/Beauty-Greater-Things-Tad-Scritchfield/dp/B00OC2GGM8',
         linkText: 'listen',
-        dark: true
+        dark: true,
+        center: true
     }
 ];

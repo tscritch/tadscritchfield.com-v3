@@ -7,37 +7,45 @@ type Props = {
 const { data } = Astro.props;
 ---
 
-<a href={data.link} target="_blank" class="block absolute">
-    <div class="text-black bg-white border rounded-lg p-1 shadow-sm min-w-[14rem] mb-2 opacity-0 animate-fade-in">
+<a href={data.link} target="_blank" class="">
+    <div class="text-black bg-white border rounded-lg p-0 min-w-[14rem] mb-2 opacity-0 animate-fade-in">
         <div class="relative">
-            <div class="rounded overflow-hidden border mb-1 flex justify-center">
+            <div class="rounded overflow-hidden flex justify-center aspect-video">
                 <div
-                    class="absolute w-full h-full bg-transparent hover:bg-slate-100 hover:bg-opacity-80 transition-all duration-500 z-10 group flex justify-center items-center"
+                    class="absolute w-full h-full bg-transparent hover:bg-gray-100 hover:bg-opacity-80 transition-all duration-500 z-10 group flex justify-center items-center"
                 >
-                    <p class="text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 text-slate-600 text-center px-8">
-                        {data.description}
-                    </p>
+                    <div class="flex flex-col items-center space-y-2">
+                        <p class="text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 text-gray-600 text-center px-8">
+                            {data.description}
+                        </p>
+                        <!-- <div
+                            class="opacity-0 group-hover:opacity-100 flex justify-center items-center border border-gray-600 text-gray-600 transition-all duration-500 text-sm font-serif rounded px-2 py-1 text-center hover:text-gray-400 hover:border-gray-400"
+                        >
+                            {data.linkText}
+                            <!-- <span class="text-md pl-1">↗</span>
+                        </div> -->
+                    </div>
                 </div>
-                {data.video ? <video src={data.video} playsinline autoplay muted loop class="z-0" /> : <img src={data.image} alt={data.title} class="z-0" />}
+                {
+                    data.video ? (
+                        <video src={data.video} playsinline autoplay muted loop class="z-0 w-full max-w-full h-fit" />
+                    ) : (
+                        <img src={data.image} alt={data.title} class={`z-0 w-full max-w-full h-fit ${data.center ? '-translate-y-[12.5%]' : ''}`} />
+                    )
+                }
             </div>
             <div
-                class={`rounded w-[calc(100%-2px)] flex justify-between items-center p-4 py-3 mb-[1px] ml-[1px] absolute bottom-0 text-[0.625rem] bg-gradient-to-t ${
-                    data.dark ? 'from-slate-800' : 'from-white'
+                class={`rounded w-[calc(100%-2px)] font-serif flex justify-between items-center p-4 py-3 mb-[0px] ml-[1px] absolute bottom-0 text-[0.625rem] bg-gradient-to-t ${
+                    data.dark ? 'from-gray-700' : 'from-white'
                 } to-transparent`}
             >
                 <h3 class={data.dark ? 'text-white' : 'text-current'}>
                     {data.title}
                 </h3>
-                <p class={data.dark ? 'text-slate-100' : 'text-slate-600'}>
+                <p class={data.dark ? 'text-gray-100' : 'text-gray-600'}>
                     {data.date}
                 </p>
             </div>
-        </div>
-        <div
-            class="flex justify-center items-center bg-slate-100 text-slate-800 text-sm font-serif rounded px-2 py-1 text-center transition-colors duration-500 hover:bg-slate-200"
-        >
-            {data.linkText}
-            <span class="text-md pl-1">↗</span>
         </div>
     </div>
 </a>
