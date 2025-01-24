@@ -62,16 +62,22 @@ module.exports = {
                             fontWeight: 500
                         },
                         blockquote: {
-                            border: 0,
+                            border: 1,
                             fontFamily: 'Source Code Pro Variable',
-                            fontSize: '1.3125em',
+                            fontSize: '0.75em',
                             fontStyle: 'italic',
                             fontWeight: 'normal',
-                            lineHeight: 1.4,
-                            paddingLeft: 0,
+                            lineHeight: 1,
+                            paddingTop: 16,
+                            paddingBottom: 8,
+                            paddingLeft: 32,
+                            backgroundColor: 'rgb(var(--color-bg-muted) / 0.5)',
                             '@media (min-width: theme("screens.sm"))': {
-                                fontSize: '1.66667em',
-                                lineHeight: 1.3
+                                fontSize: '0.75em',
+                                lineHeight: 1
+                            },
+                            'h1,h2,h3,h4,h5,h6': {
+                                marginTop: 0
                             }
                         }
                     }
