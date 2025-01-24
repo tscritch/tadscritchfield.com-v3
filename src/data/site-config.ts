@@ -92,7 +92,7 @@ const siteConfig: SiteConfig = {
         // },
         actions: [
             {
-                text: 'see work →',
+                text: 'see work ',
                 href: '/work'
             }
         ]

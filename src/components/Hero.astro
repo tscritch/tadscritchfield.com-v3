@@ -20,7 +20,9 @@ const hero = siteConfig.hero;
             {hero.actions && hero.actions.length > 0 && (
                 <div class="flex flex-wrap gap-4">
                     {hero.actions.map((action) => (
-                        <Button href={action.href}>{action.text}</Button>
+                        <a class="font-serif hover:underline hover:underline-offset-[6px]" href={action.href}>
+                            {action.text} <span class="font-sans">→</span>
+                        </a>
                     ))}
                 </div>
             )}

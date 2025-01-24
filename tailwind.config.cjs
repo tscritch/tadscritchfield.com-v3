@@ -10,11 +10,13 @@ module.exports = {
         },
         extend: {
             textColor: {
-                main: 'rgb(var(--color-text-main) / <alpha-value>)'
+                main: 'rgb(var(--color-text-main) / <alpha-value>)',
+                invert: 'rgb(var(--color-bg-main) / <alpha-value>)'
             },
             backgroundColor: {
                 main: 'rgb(var(--color-bg-main) / <alpha-value>)',
-                muted: 'rgb(var(--color-bg-muted) / <alpha-value>)'
+                muted: 'rgb(var(--color-bg-muted) / <alpha-value>)',
+                invert: 'rgb(var(--color-text-main) / <alpha-value>)'
             },
             borderColor: {
                 main: 'rgb(var(--color-border-main) / <alpha-value>)'
@@ -56,12 +58,12 @@ module.exports = {
                             }
                         },
                         'h1,h2,h3,h4,h5,h6': {
-                            fontFamily: theme('fontFamily.serif'),
+                            fontFamily: 'Source Code Pro Variable',
                             fontWeight: 500
                         },
                         blockquote: {
                             border: 0,
-                            fontFamily: theme('fontFamily.serif'),
+                            fontFamily: 'Source Code Pro Variable',
                             fontSize: '1.3125em',
                             fontStyle: 'italic',
                             fontWeight: 'normal',

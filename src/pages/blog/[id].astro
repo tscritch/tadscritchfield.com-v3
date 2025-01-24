@@ -32,8 +32,8 @@ const { Content } = await render(post);
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? excerpt} image={seo?.image} pageType="article" showHeader={false}>
     <article class="mb-16 sm:mb-24">
         <header class="mb-8">
-            <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{title}</h1>
-            <div class="mt-4 text-sm">
+            <h1 class="text-lg leading-tight font-serif font-medium sm:text-3xl sm:leading-tight">{title}</h1>
+            <div class="mt-4 text-sm italic">
                 <FormattedDate date={publishDate} />
                 {
                     updatedDate && (
@@ -47,7 +47,7 @@ const { Content } = await render(post);
                 }
             </div>
         </header>
-        <div class="max-w-none prose prose-dante sm:prose-lg">
+        <div class="max-w-none prose prose-dante">
             <Content />
         </div>
         <div class="mt-8 flex flex-wrap items-center gap-6 text-sm justify-between sm:mt-12 sm:text-base">
@@ -62,7 +62,7 @@ const { Content } = await render(post);
                     </div>
                 )
             }
-            <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Copied">Share</Button>
+            <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Copied">share</Button>
         </div>
     </article>
     {
@@ -74,7 +74,7 @@ const { Content } = await render(post);
             </div>
         )
     }
-    <Subscribe class="my-16 sm:my-24" />
+    <!-- <Subscribe class="my-16 sm:my-24" /> -->
 </BaseLayout>
 
 <script>
@@ -90,7 +90,7 @@ const { Content } = await render(post);
 
             await navigator.clipboard.writeText(url);
 
-            button.innerText = 'Copied';
+            button.innerText = 'copied';
 
             setTimeout(() => {
                 button.innerText = label;
