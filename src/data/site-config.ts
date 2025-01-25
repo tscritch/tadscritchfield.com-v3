@@ -85,7 +85,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         // title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm an engineer at SmartRent developing software for customer support and internal tools. I'm also a designer and creator. I love to build things and share what I learn along the way.",
+        text: "Currently crafting software at SmartRent that powers nearly a million apartments. I'm passionate about engineering, design, music, and creating things that make a difference.",
         // image: {
         //     src: '/hero.jpeg',
         //     alt: 'A person sitting at a desk in front of a computer'
